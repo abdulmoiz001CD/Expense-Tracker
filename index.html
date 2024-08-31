@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exopense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+    <div class="box">
+
+    <div class="upper_box">
+     <h1>Expense Tracker</h1>   
+
+     <div class="balance">
+     <h2 id="net">$0</h2>
+     <h2>Balance</h2>   
+     </div>
+    </div> 
+
+
+    <div class="transaction_container">
+    <h3>Transaction</h3>  
+    <hr> 
+
+    <div class="transactions">
+    
+    
+    </div>
+
+    </div>
+
+
+
+     <section class="transactionform">
+     <h2>Add Transaction</h2>
+     
+     <form id="formId">
+     
+     
+    <div class="Inputs">
+    
+        <div class="form_control">
+            <label for="text">Text</label> 
+            <input type="text" id="text" name="text" placeholder="Text Description">
+         </div>  
+         
+         
+         <div class="form_control">
+            <label for="amount">Amount</label> 
+            <input type="amount" id="amount" name="amount" placeholder="Text Description">
+         </div>      
+
+    </div>
+
+
+
+    <div class="btn_container">
+
+    <button id="btnEarn" type="submit">
+     <p id="earn">$90</p>
+     <p>Earning</p>   
+    </button>  
+    
+    <button id="btnExp" type="submit">
+        <p id="expen">$90</p>
+        <p>Expense</p>   
+       </button>  
+
+    </div>
+
+
+     </form>
+     </section>
+      
+
+
+    </div>   
+    </div>
+    
+</body>
+</html>

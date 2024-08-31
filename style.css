@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+html,body{
+  font-weight: 300;
+  font-family: "Poppin",sans-serif;
+  line-height: 1.2;
+}
+
+
+body{
+  font-size: 1.6rem;
+  background-color: rgb(45, 32, 32);
+}
+
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: black;
+    width: 50rem;
+    height: 60rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+
+h1{
+    font-size: 3rem;
+    font-weight:300 ;
+}
+
+
+h2{
+    font-size: 2.5rem;
+    font-weight:300 ;
+}
+
+
+
+h3{
+    font-size: 2rem;
+    font-weight:300 ;
+}
+
+
+.upper_box{
+    margin-top: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+
+}
+
+
+
+
+.balance{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+.transaction_container{
+margin-top: 1rem;
+
+}
+
+
+.transactions{
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+.transaction{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+.content{
+    display: flex;
+
+}
+
+.lower{
+    display: none;
+    gap: 1rem;
+    padding-left: 0.2rem;
+}
+
+.lower img{
+height: 2rem;
+}
+
+.show{
+    display: flex;
+}
+
+.left{
+    padding: 0.5rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.status{
+ display: grid;
+ place-content: center;
+ text-align: center;
+ align-items: center;
+ height: 3rem;
+ width: 3rem;
+}
+
+.credit{
+    background-color: green;
+    color: white;
+}
+
+
+
+.debit{
+    background-color: red;
+    color: white;
+}
+
+
+
+.transactionform{
+ position: absolute;
+ right: 0.3rem;
+ bottom: 0;
+ background-color: white;
+ color: black;   
+ width: 99%;
+ 
+ height: 30vh;
+ padding: 1rem;
+border-bottom-right-radius: 1rem;
+border-bottom-left-radius: 1rem;
+}
+
+
+.Inputs{
+display: flex;
+margin-top: 2rem;    
+justify-content: space-between;
+padding: 1rem;
+gap: 1rem;
+}
+
+.form_control{
+display: flex;
+flex-direction: column;
+}
+
+input{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+
+.btn_container{
+/* padding-left: 1.2rem;
+padding-right: 1.5rem; */
+padding: 1rem;
+display: flex;
+gap: 1rem;
+justify-content: space-between;
+max-width: 100%;
+}
+
+
+button{
+    width: 100%;
+    max-width: 19.6rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+  
+}
+
+#btnEarn{
+background-color: green;
+margin-right: 1rem;
+}
+
+
+#btnExp{
+background-color: red;
+}
+
+
+button:hover{
+opacity: 0.6;
+
+ }
+
+
+ @media(max-width:500px){
+  .box{
+    width: 95%;
+  }
+ }
+
+
+
+
+ 
+ @media(max-width:1440px){
+    .box{
+        padding-top: 3rem;
+      }
+
+
+    .Inputs{
+      margin-top: 1rem;
+    }
+   }
+
+
+   @media screen and (max-width:376px) {
+    
+    .btn_container{
+        gap: 0;
+    }
+
+
+    #btnExp{
+        width: 105%;
+    }
+
+
+    #btnEarn{
+        width: 105%;
+}
+
+   }
